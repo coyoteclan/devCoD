@@ -1,19 +1,19 @@
 
 @font-face {
   font-family: 'FiraCode';
-  src: url('../fonts/firacode/FiraCode-Regular.ttf') format('truetype');
+  src: url('../fonts/firacode/FiraCode-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'FiraCode';
-  src: url('../fonts/firacode/FiraCode-Bold.ttf') format('truetype');
+  src: url('../fonts/firacode/FiraCode-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'FiraCode';
-  src: url('../fonts/firacode/FiraCode-Semibold.ttf') format('truetype');
+  src: url('../fonts/firacode/FiraCode-Semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
