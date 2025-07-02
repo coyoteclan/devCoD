@@ -51,7 +51,6 @@ function setupIframe(iframe, projectsData) {
             `;
 
             container.appendChild(card);
-            setTimeout(100);
         });
 
         const nproject = doc.createElement('div');
