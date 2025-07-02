@@ -33,21 +33,22 @@ main {
     padding: 0 20px;
 }
 .projects {
-    margin-top: 20px;
     font-size: 18px;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .project {
     border-style: solid;
     border-width: 2px;
     border-radius: 8px;
-    width: calc(20% - 20px);
     padding: 15px;
     text-align: center;
+    aspect-ratio: 1 / 1;
 }
 .projects a {
     color: limegreen;
@@ -71,7 +72,6 @@ a {
     color: limegreen;
     text-decoration: underline;
 }
-
 .w3-animate-opacity {
     animation: opac 0.5s
 }
@@ -81,5 +81,12 @@ a {
     }
     to {
         opacity: 1
+    }
+}
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        width: 80%;
     }
 }
