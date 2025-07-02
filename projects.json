@@ -1,0 +1,36 @@
+{
+    "LIBCODUO": [
+        "https://github.com/SADMANGaming/LIBCODUO",
+        "TODO: Add description"
+    ],
+
+    "VCODLIB-1.5": [
+        "https://github.com/SADMANGaming/VCODLIB-1.5",
+        "TODO: Add description"
+    ],
+    
+    "GMI2X-Client": [
+        "https://github.com/SADMANGaming/gmi2x-client",
+        "TODO: Add description"
+    ],
+
+    "SG_LIBCOD1": [
+        "https://github.com/SADMANGaming/SG_LIBCOD1",
+        "TODO: Add description"
+    ],
+
+    "T1X-Server": [
+        "https://github.com/Wolf-Pack-Clan/t1x-server",
+        "A server extension for UO 1.51 based on IW1X-Server"
+    ],
+
+    "T1X-Client": [
+        "https://github.com/Wolf-Pack-Clan/t1x-client",
+        "A client extension for UO 1.51 based on IW1X-Client"
+    ],
+
+    "IW1X-Radiant": [
+        "https://github.com/coyoteclan/iw1x-radiant",
+        "Extension for CoD 1 radiant"
+    ]
+}
