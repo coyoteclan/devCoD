@@ -72,6 +72,9 @@ a {
     color: limegreen;
     text-decoration: underline;
 }
+.invisible {
+      display: none;
+    }
 .w3-animate-opacity {
     animation: opac 0.5s
 }
