@@ -53,7 +53,7 @@ function setupIframe(iframe, projectsData) {
             container.appendChild(card);
         });
 
-        const nproject = doc.createElement('div');
+        /*const nproject = doc.createElement('div');
         nproject.classList.add('project');
         nproject.classList.add('new-project');
         nproject.classList.add('w3-animate-opacity');
@@ -61,7 +61,7 @@ function setupIframe(iframe, projectsData) {
         <a href="https://github.com/coyoteclan/devCoD/blob/main/projects.json" target="_blank">+</a>
         `;
 
-        container.appendChild(nproject);
+        container.appendChild(nproject);*/
     });
 
     // if iframe is already loaded, trigger injection immediately
