@@ -14,10 +14,10 @@
         "A client side extension for CoD UO 1.51 with bounce, Discord RPC and more features."
     ],
 
-    "SG_LIBCOD1": [
+/*    "SG_LIBCOD1": [
         "https://github.com/SADMANGaming/SG_LIBCOD1",
         "Raphael's libcod1 with some new features."
-    ],
+    ],*/
 
     "T1X-Server": [
         "https://github.com/Wolf-Pack-Clan/t1x-server",
