@@ -9,7 +9,7 @@
         "A server side extension for CoD 1.5 based on libcod1."
     ],
     
-    "GMI2X-Client": [
+    "[ARCHIVED] GMI2X-Client": [
         "https://github.com/SADMANGaming/gmi2x-client",
         "A client side extension for CoD UO 1.51 with bounce, Discord RPC and more features."
     ],
