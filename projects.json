@@ -24,6 +24,11 @@
         "A client extension for UO 1.51 based on IW1X-Client"
     ],
 
+    "CoD: Risen Arena": [
+        "https://github.com/SADMANGaming/cod-risen-arena",
+        "DLC style mod for CoD 1.1"
+    ],
+
     "IW1X-Radiant": [
         "https://github.com/coyoteclan/iw1x-radiant",
         "Extension for CoD 1 radiant"
