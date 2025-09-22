@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>devCoD - COD1 Dump</title>
+</head>
+<body>
+  <h1>devCoD - COD1 File Dump</h1>
+  <ul id="file-list"></ul>
+
+  <script>
+    fetch("files.json")
+      .then(res => res.json())
+      .then(files => {
+        const list = document.getElementById("file-list");
+        files.forEach(file => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = file;
+          a.textContent = file;
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
