@@ -1,2 +1,4 @@
 https://devcod.pages.dev/
 https://devcod.pages.dev/index.html
+https://devcod.pages.dev/dump/cod1/
+https://devcod.pages.dev/dump/cod1/index.html
