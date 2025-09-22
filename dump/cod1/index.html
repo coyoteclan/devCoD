@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <style>
-  body {
-    font-family: monospace;
-    background: #fff;
-    color: #000;
-    margin: 20px;
-  }
-
-  h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    padding: 4px 8px;
-    font-size: 14px;
-  }
-
-  th {
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-  }
-
-  tr hr {
-    border: none;
-    border-top: 1px solid #ccc;
-  }
-
-  td a {
-    color: #0000EE;
-    text-decoration: none;
-  }
-
-  td a:hover {
-    text-decoration: underline;
-  }
-
-  td.size {
-    text-align: right;
-  }
-  </style>
 <head>
   <title>devCoD - COD1 Dump</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #fff;
+      color: #000;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    td a {
+      color: #0000EE;
+      text-decoration: none;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    td.size {
+      text-align: right;
+    }
+  </style>
 </head>
 <body>
   <h1>devCoD - COD1 File Dump</h1>
-  <ul id="file-list"></ul>
+
+  <table id="file-table">
+    <tr>
+      <th>Name</th>
+      <th>Last modified</th>
+      <th>Size</th>
+    </tr>
+    <tr><td colspan="3"><hr></td></tr>
+  </table>
 
   <script>
     fetch("files.json")
       .then(res => res.json())
       .then(files => {
-        const list = document.getElementById("file-list");
-        files.forEach(file => {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.href = file;
-          a.textContent = file;
-          li.appendChild(a);
-          list.appendChild(li);
+        const table = document.getElementById("file-table");
+        files.forEach(f => {
+          let row = document.createElement("tr");
+          row.innerHTML = `
+            <td><a href="${f.name}">${f.name}</a></td>
+            <td>${f.date}</td>
+            <td class="size">${f.size}</td>
+          `;
+          table.appendChild(row);
         });
       });
   </script>
